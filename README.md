@@ -3,6 +3,10 @@
 A simple **MERN stack** app that demonstrates authentication with **Google** and **GitHub** using OAuth 2.0.  
 Users can log in via their social accounts, get a session handled with **express-sessions**, and view a basic dashboard.
 
+## 🔨 Demo
+- Initial Login session: [ARP Social Login](https://youtu.be/LZ3SaUb10Mk)
+- Showing session management: [ARP Social Session](https://youtu.be/R_UfXIDiQv8)
+- 
 ---
 
 ## 🚀 Getting Started
