@@ -32,16 +32,15 @@ This will give you both the **client** and **server** folders.
    ```bash
    npm run dev
    ```
-   Copy the localhost URL (something like `http://localhost:5173/`) for later.
+   Copy the localhost URL (something like `http://localhost:5173`) for later **DO NOT INCLUDE THE LAST '/' OR ELSE ITLL BREAK THE PROJECT**.
 
-4. Create a `.env` file in the **client** root and add:
-   ```ini
-   REACT_APP_URL=<replace with your local host>
+4. Navigate to client/src/components/Dashboard.jsx and modify this line:
+   **WHEN YOU PASTE THE LOCALHOST, DO NOT INCLUDE THE LAST '/' OR ELSE ITLL BREAK THE PROJECT**
+   ```javascript
+   const handleLoginRedirect = () => {
+      window.location.href = "http://localhost:5174"; // CHANGE THIS WITH YOUR LOCALHOST
+   };
    ```
-   ✅ **Important:**  
-   - The `.env` file must be in the **client folder**, not a subfolder.  
-   - Client `.env` variables are **publicly visible**. Do not store secrets or database credentials here.  
-
 ---
 
 ## ⚙️ Server Setup
@@ -63,6 +62,13 @@ This will give you both the **client** and **server** folders.
 ## 🔑 Environment Variables
 
 Here’s what you’ll need to configure in `server/.env`:
+
+### React App
+Paste your React app front end localhost into the variable:
+**WHEN YOU PASTE THE LOCALHOST, DO NOT INCLUDE THE LAST '/' OR ELSE ITLL BREAK THE PROJECT**
+```ini
+REACT_APP_URL=your_react_app_url
+```
 
 ### Session Secret
 Generate a secure key for express-sessions:

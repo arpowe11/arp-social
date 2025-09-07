@@ -6,7 +6,10 @@ const Dashboard = () => {
   const [user, setUser] = useState(null);
 
   const handleLoginRedirect = () => {
-    window.location.href = process.env.REACT_APP_URL;
+    window.location.href = "http://localhost:5173"; // CHANGE THIS WITH YOUR LOCALHOST.
+                                                    // DO NOT ADD TRAILING /, 
+                                                    // IF YOU HAVE localhost:1234/, IT
+                                                    // WILL FAIL.
   };
 
   useEffect(() => {
