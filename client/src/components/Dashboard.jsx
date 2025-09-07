@@ -6,7 +6,7 @@ const Dashboard = () => {
   const [user, setUser] = useState(null);
 
   const handleLoginRedirect = () => {
-    window.location.href = "http://localhost:5173/";
+    window.location.href = process.env.REACT_APP_URL;
   };
 
   useEffect(() => {
@@ -45,5 +45,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
-// TODO: Change all URLS to prod URLS

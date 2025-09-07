@@ -33,7 +33,7 @@ async function bootstrap() {
     }
 
     app.use(cors({
-        origin: "http://localhost:5173",  // TODO: Change this to prod URL
+        origin: process.env.REACT_APP_URL,
         credentials: true,
     }));
 

@@ -32,5 +32,3 @@ const LogoutButton = () => {
 };
 
 export default LogoutButton;
-
-// TODO: Change all URLS to prod URLS

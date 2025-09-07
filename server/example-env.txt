@@ -1,0 +1,13 @@
+PORT=3001
+REACT_APP_URL=<replace-with-app-url>
+
+MONGO_URI=<replace-with-connection-string>
+SESSION_SECRET=<replace-with-session-secret>
+
+GOOGLE_CLIENT_ID=<replace-with-client-id>
+GOOGLE_CLIENT_SECRET=<replace-with-client-secret>
+GOOGLE_REDIRECT_URL=http://localhost:3001/api/auth/google/redirect
+
+GITHUB_CLIENT_ID=<replace-with-client-id>
+GITHUB_CLIENT_SECRET=<replace-with-client-secret>
+GITHUB_REDIRECT_URL=http://localhost:3001/api/auth/github/redirect
