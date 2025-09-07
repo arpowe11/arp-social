@@ -14,7 +14,6 @@ import './passport.js';
 import './strategies/google.js';
 import './strategies/github.js';
 
-
 async function bootstrap() {
     const app = express();
     const PORT = process.env.PORT;
